@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://fhs5j3adw52k"]
+
+[node name="Floor" type="Node2D"]
+position = Vector2(575, 324)
+
+[node name="floor_image" type="Sprite2D" parent="."]

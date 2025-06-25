@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://d20syjsw3p1bx"]
+
+[ext_resource type="Script" path="res://script/other/TabContainer.gd" id="1_ccykn"]
+[ext_resource type="PackedScene" uid="uid://dvh6ljj8slb7d" path="res://scenes/other/pc.tscn" id="1_oldrd"]
+
+[node name="hardware_select" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 83.0
+offset_right = 308.0
+offset_bottom = 185.0
+tabs_visible = false
+script = ExtResource("1_ccykn")
+
+[node name="Оборудование" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Оборудование"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = 15.0
+offset_right = -18.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Оборудование/ScrollContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Оборудование/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="pc" parent="TabContainer/Оборудование/ScrollContainer/VBoxContainer/HBoxContainer" instance=ExtResource("1_oldrd")]
+custom_minimum_size = Vector2(17, 17)
+layout_mode = 2
+
+[connection signal="mouse_entered" from="TabContainer" to="TabContainer" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TabContainer" to="TabContainer" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="TabContainer/Оборудование" to="TabContainer" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TabContainer/Оборудование" to="TabContainer" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="TabContainer/Оборудование/ScrollContainer" to="TabContainer" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TabContainer/Оборудование/ScrollContainer" to="TabContainer" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="TabContainer/Оборудование/ScrollContainer/VBoxContainer" to="TabContainer" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TabContainer/Оборудование/ScrollContainer/VBoxContainer" to="TabContainer" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="TabContainer/Оборудование/ScrollContainer/VBoxContainer/HBoxContainer" to="TabContainer" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TabContainer/Оборудование/ScrollContainer/VBoxContainer/HBoxContainer" to="TabContainer" method="_on_mouse_exited"]

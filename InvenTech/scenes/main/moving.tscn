@@ -1,0 +1,440 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcalr6g7wdcr7"]
+
+[ext_resource type="Script" path="res://script/main/moving.gd" id="1_roguv"]
+[ext_resource type="Texture2D" uid="uid://rgcs6uciashk" path="res://icons/refresh (1).png" id="2_kso3d"]
+
+[node name="moving" type="Node2D"]
+script = ExtResource("1_roguv")
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+anchors_preset = -1
+anchor_right = 0.0590278
+offset_left = 957.0
+offset_right = 1279.0
+offset_bottom = 648.0
+color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="."]
+anchors_preset = -1
+anchor_right = 0.0590278
+offset_left = 1062.0
+offset_right = 1179.0
+offset_bottom = 43.0
+color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+visible = false
+anchors_preset = -1
+anchor_right = 0.0590278
+offset_left = 353.0
+offset_right = 938.0
+offset_bottom = 648.0
+color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+anchors_preset = -1
+anchor_right = 0.0590278
+offset_top = 589.0
+offset_right = 207.0
+offset_bottom = 648.0
+color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="."]
+visible = false
+anchors_preset = -1
+anchor_right = 0.0590278
+offset_left = 360.0
+offset_top = 7.0
+offset_right = 931.0
+offset_bottom = 641.0
+color = Color(0.313726, 0.313726, 0.313726, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchors_preset = -1
+anchor_right = 0.0590278
+offset_left = 964.0
+offset_top = 7.0
+offset_right = 1272.0
+offset_bottom = 641.0
+color = Color(0.313726, 0.313726, 0.313726, 1)
+
+[node name="ColorRect13" type="ColorRect" parent="."]
+visible = false
+offset_left = 438.0
+offset_top = 45.0
+offset_right = 613.0
+offset_bottom = 85.0
+color = Color(0.517647, 0.517647, 0.517647, 1)
+
+[node name="ColorRect14" type="ColorRect" parent="."]
+visible = false
+offset_left = 749.0
+offset_top = 45.0
+offset_right = 925.0
+offset_bottom = 85.0
+color = Color(0.517647, 0.517647, 0.517647, 1)
+
+[node name="ColorRect15" type="ColorRect" parent="."]
+visible = false
+offset_left = 366.0
+offset_top = 134.0
+offset_right = 615.0
+offset_bottom = 549.0
+color = Color(0.517647, 0.517647, 0.517647, 1)
+
+[node name="ColorRect16" type="ColorRect" parent="."]
+visible = false
+offset_left = 677.0
+offset_top = 134.0
+offset_right = 926.0
+offset_bottom = 549.0
+color = Color(0.517647, 0.517647, 0.517647, 1)
+
+[node name="ColorRect17" type="ColorRect" parent="."]
+visible = false
+offset_left = 366.0
+offset_top = 554.0
+offset_right = 926.0
+offset_bottom = 637.0
+color = Color(0.517647, 0.517647, 0.517647, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+anchors_preset = -1
+anchor_right = 0.0590278
+offset_top = 589.0
+offset_right = 203.0
+offset_bottom = 648.0
+color = Color(0.313726, 0.313726, 0.313726, 1)
+
+[node name="ColorRect18" type="ColorRect" parent="."]
+offset_left = 2.0
+offset_top = 593.0
+offset_right = 201.0
+offset_bottom = 643.0
+color = Color(0.517647, 0.517647, 0.517647, 1)
+
+[node name="ColorRect19" type="ColorRect" parent="."]
+offset_left = 968.0
+offset_top = 41.0
+offset_right = 1268.0
+offset_bottom = 637.0
+color = Color(0.517647, 0.517647, 0.517647, 1)
+
+[node name="branch_select_2" type="OptionButton" parent="."]
+visible = false
+offset_left = 751.0
+offset_top = 47.0
+offset_right = 923.0
+offset_bottom = 83.0
+theme_override_font_sizes/font_size = 15
+text_overrun_behavior = 1
+fit_to_longest_item = false
+
+[node name="Label4" type="Label" parent="."]
+visible = false
+offset_left = 677.0
+offset_top = 53.0
+offset_right = 746.0
+offset_bottom = 76.0
+text = "Филиал:"
+
+[node name="Label7" type="Label" parent="."]
+visible = false
+offset_left = 747.0
+offset_top = 4.0
+offset_right = 806.0
+offset_bottom = 39.0
+theme_override_font_sizes/font_size = 25
+text = "Куда"
+
+[node name="branch_select_1" type="OptionButton" parent="."]
+visible = false
+offset_left = 440.0
+offset_top = 47.0
+offset_right = 611.0
+offset_bottom = 83.0
+theme_override_font_sizes/font_size = 15
+text_overrun_behavior = 1
+fit_to_longest_item = false
+
+[node name="Label3" type="Label" parent="."]
+visible = false
+offset_left = 366.0
+offset_top = 53.0
+offset_right = 435.0
+offset_bottom = 76.0
+text = "Филиал:"
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+offset_left = 439.0
+offset_top = 5.0
+offset_right = 529.0
+offset_bottom = 40.0
+theme_override_font_sizes/font_size = 25
+text = "Откуда"
+
+[node name="info_2" type="ItemList" parent="."]
+visible = false
+offset_left = 679.0
+offset_top = 173.0
+offset_right = 924.0
+offset_bottom = 547.0
+max_text_lines = 3
+same_column_width = true
+
+[node name="info_1" type="ItemList" parent="."]
+visible = false
+offset_left = 368.0
+offset_top = 173.0
+offset_right = 613.0
+offset_bottom = 547.0
+max_text_lines = 3
+same_column_width = true
+
+[node name="move" type="Button" parent="."]
+visible = false
+offset_left = 649.0
+offset_top = 556.0
+offset_right = 924.0
+offset_bottom = 635.0
+theme_override_font_sizes/font_size = 30
+text = "Переезд"
+
+[node name="back" type="Button" parent="."]
+offset_left = 4.0
+offset_top = 595.0
+offset_right = 199.0
+offset_bottom = 641.0
+theme_override_font_sizes/font_size = 25
+text = "Назад"
+
+[node name="stock_1" type="CheckButton" parent="."]
+visible = false
+offset_left = 368.0
+offset_top = 100.0
+offset_right = 462.0
+offset_bottom = 131.0
+theme_override_font_sizes/font_size = 15
+text = "Склад"
+
+[node name="stock_2" type="CheckButton" parent="."]
+visible = false
+offset_left = 679.0
+offset_top = 100.0
+offset_right = 776.0
+offset_bottom = 131.0
+theme_override_font_sizes/font_size = 15
+text = "Склад"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+visible = false
+offset_left = 368.0
+offset_top = 137.0
+offset_right = 527.0
+offset_bottom = 170.0
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+visible = false
+offset_left = 679.0
+offset_top = 137.0
+offset_right = 838.0
+offset_bottom = 170.0
+
+[node name="add_1" type="Button" parent="."]
+visible = false
+offset_left = 529.0
+offset_top = 137.0
+offset_right = 613.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 15
+text = "Добавить"
+
+[node name="add_2" type="Button" parent="."]
+visible = false
+offset_left = 840.0
+offset_top = 137.0
+offset_right = 924.0
+offset_bottom = 170.0
+theme_override_font_sizes/font_size = 15
+text = "Добавить"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1073.0
+offset_top = 3.0
+offset_right = 1166.0
+offset_bottom = 38.0
+theme_override_font_sizes/font_size = 25
+text = "Задачи"
+
+[node name="task_search" type="LineEdit" parent="."]
+offset_left = 1009.0
+offset_top = 43.0
+offset_right = 1166.0
+offset_bottom = 79.0
+scale = Vector2(0.9983, 1.03595)
+
+[node name="search" type="Button" parent="."]
+offset_left = 1168.0
+offset_top = 43.0
+offset_right = 1266.0
+offset_bottom = 80.0
+text = "Поиск"
+
+[node name="tasks" type="ItemList" parent="."]
+offset_left = 971.0
+offset_top = 82.0
+offset_right = 1265.0
+offset_bottom = 218.0
+theme_override_font_sizes/font_size = 15
+
+[node name="edit" type="Button" parent="."]
+offset_left = 970.0
+offset_top = 596.0
+offset_right = 1122.0
+offset_bottom = 635.0
+disabled = true
+text = "Редактировать"
+
+[node name="update" type="Button" parent="."]
+offset_left = 970.0
+offset_top = 554.0
+offset_right = 1122.0
+offset_bottom = 593.0
+disabled = true
+text = "Обновить статус"
+
+[node name="create" type="Button" parent="."]
+offset_left = 1125.0
+offset_top = 596.0
+offset_right = 1266.0
+offset_bottom = 635.0
+text = "Создать"
+
+[node name="save" type="Button" parent="."]
+offset_left = 1125.0
+offset_top = 554.0
+offset_right = 1266.0
+offset_bottom = 593.0
+disabled = true
+text = "Сохранить"
+
+[node name="task_text" type="TextEdit" parent="."]
+offset_left = 971.0
+offset_top = 324.0
+offset_right = 1265.0
+offset_bottom = 473.0
+placeholder_text = "Текст задачи"
+editable = false
+wrap_mode = 1
+
+[node name="who_did" type="TextEdit" parent="."]
+offset_left = 971.0
+offset_top = 512.0
+offset_right = 1265.0
+offset_bottom = 551.0
+placeholder_text = "Кто выполнил"
+editable = false
+
+[node name="status" type="OptionButton" parent="."]
+offset_left = 1052.0
+offset_top = 476.0
+offset_right = 1264.0
+offset_bottom = 509.0
+disabled = true
+item_count = 3
+popup/item_0/text = "Выполнено"
+popup/item_0/id = 0
+popup/item_1/text = "В процессе"
+popup/item_1/id = 1
+popup/item_2/text = "Заморожено"
+popup/item_2/id = 2
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 971.0
+offset_top = 477.0
+offset_right = 1067.0
+offset_bottom = 512.0
+theme_override_colors/font_color = Color(0.184314, 0.184314, 0.184314, 1)
+theme_override_font_sizes/font_size = 19
+text = "Статус: "
+
+[node name="task_name" type="LineEdit" parent="."]
+offset_left = 971.0
+offset_top = 288.0
+offset_right = 1265.0
+offset_bottom = 321.0
+placeholder_text = "Название
+"
+editable = false
+
+[node name="task_date" type="LineEdit" parent="."]
+offset_left = 971.0
+offset_top = 253.0
+offset_right = 1265.0
+offset_bottom = 286.0
+placeholder_text = "Дата"
+editable = false
+
+[node name="clear" type="Button" parent="."]
+visible = false
+offset_left = 368.0
+offset_top = 556.0
+offset_right = 646.0
+offset_bottom = 635.0
+theme_override_font_sizes/font_size = 30
+text = "Очистить"
+
+[node name="error" type="Label" parent="."]
+visible = false
+offset_left = 491.0
+offset_top = 102.0
+offset_right = 661.0
+offset_bottom = 125.0
+text = "серийника нет"
+
+[node name="error2" type="Label" parent="."]
+visible = false
+offset_left = 782.0
+offset_top = 102.0
+offset_right = 952.0
+offset_bottom = 125.0
+text = "серийника нет"
+
+[node name="refresh" type="Button" parent="."]
+offset_left = 971.0
+offset_top = 43.0
+offset_right = 1007.0
+offset_bottom = 80.0
+icon = ExtResource("2_kso3d")
+expand_icon = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="clear2" type="Button" parent="."]
+offset_left = 971.0
+offset_top = 220.0
+offset_right = 1265.0
+offset_bottom = 251.0
+text = "Очистить"
+
+[connection signal="item_selected" from="branch_select_2" to="." method="_on_branch_select_2_item_selected"]
+[connection signal="item_selected" from="branch_select_1" to="." method="_on_branch_select_1_item_selected"]
+[connection signal="item_activated" from="info_2" to="." method="_on_info_2_item_activated"]
+[connection signal="item_activated" from="info_1" to="." method="_on_info_1_item_activated"]
+[connection signal="pressed" from="move" to="." method="_on_move_pressed"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="add_1" to="." method="_on_add_1_pressed"]
+[connection signal="pressed" from="add_2" to="." method="_on_add_2_pressed"]
+[connection signal="pressed" from="search" to="." method="_on_search_pressed"]
+[connection signal="item_selected" from="tasks" to="." method="_on_tasks_item_selected"]
+[connection signal="pressed" from="edit" to="." method="_on_edit_pressed"]
+[connection signal="pressed" from="update" to="." method="_on_update_pressed"]
+[connection signal="pressed" from="create" to="." method="_on_create_pressed"]
+[connection signal="pressed" from="save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="clear" to="." method="_on_clear_pressed"]
+[connection signal="pressed" from="refresh" to="." method="_on_refresh_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="clear2" to="." method="_on_clear_2_pressed"]

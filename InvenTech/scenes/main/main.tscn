@@ -1,0 +1,269 @@
+[gd_scene load_steps=7 format=3 uid="uid://dt17171bmaar2"]
+
+[ext_resource type="Script" path="res://script/main/main.gd" id="1_uicls"]
+[ext_resource type="ButtonGroup" uid="uid://2g4dwd8ehiad" path="res://groups/buttons.tres" id="2_2fqvl"]
+[ext_resource type="PackedScene" uid="uid://fhs5j3adw52k" path="res://floors/floor.tscn" id="3_wo3nc"]
+[ext_resource type="ButtonGroup" uid="uid://bf78b4ul50p1k" path="res://groups/floor_select_buttons.tres" id="4_agemw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qxo1h"]
+bg_color = Color(0.24108, 0.690044, 0.548187, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d7jnu"]
+bg_color = Color(0.239216, 0.690196, 0.54902, 1)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_uicls")
+group = ExtResource("2_2fqvl")
+floor_group = ExtResource("4_agemw")
+
+[node name="Floor" parent="." instance=ExtResource("3_wo3nc")]
+position = Vector2(0, 0)
+
+[node name="menu" type="CanvasLayer" parent="."]
+
+[node name="ColorRect4" type="ColorRect" parent="menu"]
+anchors_preset = -1
+anchor_right = 0.0590278
+offset_right = 279.444
+offset_bottom = 648.0
+color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[node name="floor_btns" type="ColorRect" parent="menu"]
+offset_left = 562.0
+offset_right = 1280.0
+offset_bottom = 66.0
+color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[node name="ColorRect" type="ColorRect" parent="menu/floor_btns"]
+layout_mode = 0
+offset_right = 718.0
+offset_bottom = 59.0
+color = Color(0.313726, 0.313726, 0.313726, 1)
+
+[node name="floor1" type="Button" parent="menu/floor_btns"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 121.0
+offset_bottom = 51.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qxo1h")
+theme_override_styles/focus = SubResource("StyleBoxFlat_d7jnu")
+toggle_mode = true
+button_group = ExtResource("4_agemw")
+text = "1 этаж"
+
+[node name="floor2" type="Button" parent="menu/floor_btns"]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 8.0
+offset_right = 239.0
+offset_bottom = 51.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qxo1h")
+theme_override_styles/focus = SubResource("StyleBoxFlat_d7jnu")
+toggle_mode = true
+button_group = ExtResource("4_agemw")
+text = "2 этаж"
+
+[node name="floor3" type="Button" parent="menu/floor_btns"]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 8.0
+offset_right = 357.0
+offset_bottom = 51.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qxo1h")
+theme_override_styles/focus = SubResource("StyleBoxFlat_d7jnu")
+toggle_mode = true
+button_group = ExtResource("4_agemw")
+text = "3 этаж"
+
+[node name="floor4" type="Button" parent="menu/floor_btns"]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 8.0
+offset_right = 475.0
+offset_bottom = 51.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qxo1h")
+theme_override_styles/focus = SubResource("StyleBoxFlat_d7jnu")
+toggle_mode = true
+button_group = ExtResource("4_agemw")
+text = "4 этаж"
+
+[node name="floor5" type="Button" parent="menu/floor_btns"]
+layout_mode = 0
+offset_left = 479.0
+offset_top = 8.0
+offset_right = 592.0
+offset_bottom = 51.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qxo1h")
+theme_override_styles/focus = SubResource("StyleBoxFlat_d7jnu")
+toggle_mode = true
+button_group = ExtResource("4_agemw")
+text = "5 этаж"
+
+[node name="floor6" type="Button" parent="menu/floor_btns"]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 8.0
+offset_right = 710.0
+offset_bottom = 51.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qxo1h")
+theme_override_styles/focus = SubResource("StyleBoxFlat_d7jnu")
+toggle_mode = true
+button_group = ExtResource("4_agemw")
+text = "6 этаж"
+
+[node name="ColorRect2" type="ColorRect" parent="menu/floor_btns"]
+visible = false
+layout_mode = 0
+offset_left = 211.0
+offset_top = 5.0
+offset_right = 922.0
+offset_bottom = 54.0
+color = Color(0.517647, 0.517647, 0.517647, 1)
+
+[node name="floor_list" type="ColorRect" parent="menu"]
+visible = false
+anchors_preset = -1
+anchor_left = -0.000868056
+anchor_right = -0.000868056
+offset_left = 348.111
+offset_right = 488.111
+offset_bottom = 51.0
+color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="menu/floor_list"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.00462963
+anchor_bottom = -0.00462963
+offset_left = -6.88889
+offset_top = 0.236111
+offset_right = 134.111
+offset_bottom = 51.2361
+color = Color(0.313726, 0.313726, 0.313726, 1)
+
+[node name="ColorRect7" type="ColorRect" parent="menu/floor_list"]
+layout_mode = 0
+offset_left = 51.1111
+offset_top = 7.0
+offset_right = 127.111
+offset_bottom = 46.0
+color = Color(0.517647, 0.517647, 0.517647, 1)
+
+[node name="floor_select" type="OptionButton" parent="menu/floor_list"]
+layout_mode = 0
+offset_left = 53.1111
+offset_top = 9.0
+offset_right = 125.111
+offset_bottom = 44.0
+theme_override_font_sizes/font_size = 15
+alignment = 1
+
+[node name="Label" type="Label" parent="menu/floor_list"]
+layout_mode = 0
+offset_left = 0.111115
+offset_top = 14.0
+offset_right = 46.1111
+offset_bottom = 37.0
+text = "Этаж:"
+
+[node name="ColorRect2" type="ColorRect" parent="menu"]
+anchors_preset = -1
+anchor_right = 0.0590278
+offset_right = 269.444
+offset_bottom = 648.0
+color = Color(0.313726, 0.313726, 0.313726, 1)
+
+[node name="back" type="Button" parent="menu"]
+anchors_preset = -1
+anchor_left = -0.0251736
+anchor_top = 0.00482253
+anchor_right = 0.0425347
+anchor_bottom = 0.00945216
+offset_left = 41.0
+offset_top = 581.875
+offset_right = 285.0
+offset_bottom = 633.875
+theme_override_font_sizes/font_size = 25
+text = "Назад"
+
+[node name="LineEdit" type="TextEdit" parent="menu"]
+anchors_preset = -1
+anchor_left = -0.00546875
+anchor_top = -0.000161265
+anchor_right = 0.05625
+anchor_bottom = -0.000161265
+offset_left = 16.0
+offset_top = 9.1045
+offset_right = 172.0
+offset_bottom = 45.1045
+metadata/_edit_use_anchors_ = true
+
+[node name="search" type="Button" parent="menu"]
+anchors_preset = -1
+anchor_left = 0.00625
+anchor_top = -0.000161265
+anchor_right = 0.0078125
+anchor_bottom = -0.000161265
+offset_left = 244.0
+offset_top = 9.1045
+offset_right = 329.0
+offset_bottom = 45.1045
+theme_override_font_sizes/font_size = 20
+text = "Поиск"
+metadata/_edit_use_anchors_ = true
+
+[node name="ItemList" type="ItemList" parent="menu"]
+anchors_preset = -1
+anchor_left = -0.00546875
+anchor_top = -0.00479089
+anchor_right = 0.0617188
+anchor_bottom = -0.0001605
+offset_left = 16.0
+offset_top = 52.1045
+offset_right = 260.0
+offset_bottom = 182.104
+metadata/_edit_use_anchors_ = true
+
+[node name="refresh" type="Button" parent="menu"]
+anchors_preset = -1
+anchor_left = -0.0338542
+anchor_top = -0.000161253
+anchor_right = 0.0338542
+anchor_bottom = -0.000161253
+offset_left = 51.0
+offset_top = 185.104
+offset_right = 295.0
+offset_bottom = 221.104
+theme_override_font_sizes/font_size = 20
+text = "Очистить"
+
+[node name="Label2" type="Label" parent="menu"]
+visible = false
+offset_left = 52.0
+offset_top = 223.0
+offset_right = 294.0
+offset_bottom = 249.0
+theme_override_colors/font_color = Color(0.690196, 0.207843, 0.207843, 1)
+theme_override_font_sizes/font_size = 15
+text = "Совпадений не найдено"
+horizontal_alignment = 1
+
+[node name="info" type="ItemList" parent="menu"]
+offset_left = 9.0
+offset_top = 250.0
+offset_right = 339.0
+offset_bottom = 564.0
+max_text_lines = 3
+same_column_width = true
+
+[node name="cam_container" type="Node2D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="cam_container"]
+
+[connection signal="item_selected" from="menu/floor_list/floor_select" to="." method="_on_floor_selected"]
+[connection signal="pressed" from="menu/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="menu/search" to="." method="_on_search_pressed"]
+[connection signal="item_selected" from="menu/ItemList" to="." method="_on_item_list_item_selected"]
+[connection signal="pressed" from="menu/refresh" to="." method="_on_refresh_pressed"]

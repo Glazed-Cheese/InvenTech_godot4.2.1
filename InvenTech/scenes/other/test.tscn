@@ -1,0 +1,98 @@
+[gd_scene load_steps=2 format=3 uid="uid://hamoob7ml1jw"]
+
+[ext_resource type="Script" path="res://script/other/test.gd" id="1_f2eep"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_f2eep")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 202.0
+offset_top = 76.0
+offset_right = 496.0
+offset_bottom = 187.0
+theme_override_font_sizes/font_size = 30
+text = "Здесь есть текст"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="office" type="LineEdit" parent="."]
+offset_left = 549.0
+offset_top = 228.0
+offset_right = 721.0
+offset_bottom = 259.0
+editable = false
+
+[node name="branch" type="LineEdit" parent="."]
+offset_left = 550.0
+offset_top = 297.0
+offset_right = 722.0
+offset_bottom = 328.0
+editable = false
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 607.0
+offset_top = 265.0
+offset_right = 662.0
+offset_bottom = 288.0
+text = "папка"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 610.0
+offset_top = 191.0
+offset_right = 653.0
+offset_bottom = 214.0
+text = "office"
+
+[node name="back" type="Button" parent="."]
+offset_left = 584.0
+offset_top = 446.0
+offset_right = 687.0
+offset_bottom = 493.0
+text = "Назад"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 581.0
+offset_top = 338.0
+offset_right = 694.0
+offset_bottom = 361.0
+theme_override_font_sizes/font_size = 15
+text = "Кол-во файлов"
+
+[node name="files" type="LineEdit" parent="."]
+offset_left = 550.0
+offset_top = 371.0
+offset_right = 721.0
+offset_bottom = 402.0
+editable = false
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 759.0
+offset_top = 228.0
+offset_right = 969.0
+offset_bottom = 259.0
+
+[node name="add" type="Button" parent="."]
+offset_left = 984.0
+offset_top = 228.0
+offset_right = 1071.0
+offset_bottom = 259.0
+text = "Добавить"
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 759.0
+offset_top = 191.0
+offset_right = 806.0
+offset_bottom = 214.0
+text = "адрес"
+
+[node name="fun_btn" type="Button" parent="."]
+offset_left = 758.0
+offset_top = 361.0
+offset_right = 924.0
+offset_bottom = 404.0
+text = "убрать имена пк
+"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="add" to="." method="_on_add_pressed"]
+[connection signal="pressed" from="fun_btn" to="." method="_on_fun_btn_pressed"]

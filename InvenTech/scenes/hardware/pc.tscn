@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkbr07f3hirmf"]
+
+[ext_resource type="Texture2D" uid="uid://dbfqwd0qr05hs" path="res://sprites/pc_dot.png" id="1_4che5"]
+[ext_resource type="Texture2D" uid="uid://c3xynie5dx2tg" path="res://sprites/selected_pc_dot.png" id="2_m18hr"]
+[ext_resource type="Texture2D" uid="uid://bk41cldgt1rd8" path="res://sprites/other.png" id="4_rmnqg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j1kqf"]
+size = Vector2(26, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ow0pf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_4che5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m18hr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rmnqg")
+}],
+"loop": true,
+"name": &"pc",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_j1kqf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-9.53674e-07, -9.53674e-07)
+scale = Vector2(1.54688, 1.54688)
+sprite_frames = SubResource("SpriteFrames_ow0pf")
+animation = &"pc"
+metadata/_edit_group_ = true
+
+[node name="pc" type="Button" parent="AnimatedSprite2D"]
+offset_left = -8.0
+offset_top = -13.0
+offset_right = 8.0
+offset_bottom = 13.0
+theme_override_font_sizes/font_size = 5
+flat = true

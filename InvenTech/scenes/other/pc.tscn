@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvh6ljj8slb7d"]
+
+[ext_resource type="PackedScene" uid="uid://hpg0tp6dxdkc" path="res://scenes/other/item_texture.tscn" id="1_0v6oi"]
+[ext_resource type="Texture2D" uid="uid://dbfqwd0qr05hs" path="res://sprites/pc_dot.png" id="2_vhs60"]
+[ext_resource type="PackedScene" uid="uid://dkbr07f3hirmf" path="res://scenes/hardware/pc.tscn" id="3_hukmj"]
+
+[node name="pc" instance=ExtResource("1_0v6oi")]
+offset_left = -28.0
+offset_top = -30.0
+offset_right = 28.0
+offset_bottom = 28.0
+texture = ExtResource("2_vhs60")
+this_scene = ExtResource("3_hukmj")
