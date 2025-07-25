@@ -30,16 +30,8 @@ var database : SQLite
 var cam_spd = 10
 
 func _ready():
-	if Global.office == "office_b1":
-		floor_list.visible = false
-		floor_btns.visible = true
-		
-		var btn_list = floor_group.get_buttons()
-		for i in range(len(btn_list)):
-			btn_list[i].pressed.connect(self._on_floor_btn_pressed)
-	else:
-		floor_list.visible = true
-		floor_btns.visible = false
+	floor_list.visible = true
+	floor_btns.visible = false
 	
 	var floors = DirAccess.get_files_at(floor_dir+Global.branch+"/")
 	
